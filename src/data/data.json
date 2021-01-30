@@ -34,14 +34,14 @@
       "companyName": "TOTVS Interior Paulista",
       "functionName": "Analista Desenvolvedor Pleno",
       "city": "Campinas - SP",
-      "description": "-Desenvolvimento de personalizações no Fluig(Formulário(ECM),diagrama/workflow(BPM),widgets e layouts(WCM)e GED-Gestão de Documentos)<br/>-Desenvolvimento de personalizações no ERP Protheus em diversos módulos como Compras,Financeiro,Faturamento,Gestão de Contratos,Gestão de Pessoal entre outros<br/>-Atuado em diversos projetos de vários clientes,presencialmente e também remoto<br/>-Responsável pela estruturação/organização do repositório de fontes no GIT/SVN e controle de padrão de desenvolvimento(boas práticas)em alguns projetos<br/>-Ministração de treinamentos de desenvolvimento no Fluig<br/>-Conhecimento da infraestrutura do Fluig e Protheus(instalação/atualização,configuração e manutenção)<br/><br/>Tecnologias Utilizadas:<br/>-Fluig:HMTL,CSS,JavaScript,JQuery e Bootstrap<br/>-Protheus:ADVPL<br/>-Angular<br/>-SQL Server<br/>-Versionamento de fontes utilizando GIT e SVN<br/>-API/Webservice REST e SOAP<br/>-GoodData(TOTVS Analytics)<br/>"
+      "description": "- Desenvolvimento de personalizações no Fluig (Formulário(ECM), diagrama/workflow (BPM), widgets e layouts (WCM) e GED - Gestão de Documentos)<br/>- Desenvolvimento de personalizações no ERP Protheus em diversos módulos como Compras, Financeiro, Faturamento, Gestão de Contratos, Gestão de Pessoal entre outros<br/>- Atuado em diversos projetos de vários clientes, presencialmente e também remoto<br/>- Responsável pela estruturação/organização do repositório de fontes no GIT/SVN e controle de padrão de desenvolvimento (boas práticas) em alguns projetos<br/>- Ministração de treinamentos de desenvolvimento no Fluig<br/>-Conhecimento da infraestrutura do Fluig e Protheus (instalação/atualização, configuração e manutenção)<br/><br/>Tecnologias Utilizadas:<br/>- Fluig: HMTL, CSS, JavaScript, JQuery e Bootstrap<br/>- Protheus: ADVPL<br/>- Angular<br/>- SQL Server<br/>- Versionamento de fontes utilizando GIT e SVN<br/>- API/Webservice REST e SOAP<br/>- GoodData(TOTVS Analytics)<br/>"
     },
     {
       "year": "12/2013 - 11/2017",
       "companyName": "Art Informática, Papelaria e Eletrônicos LTDA.",
       "functionName": "Técnico em Informática",
       "city": "Artur Nogueira - SP",
-      "description": "-Manutenção em Computadores,Notebooks,Smartphones e Tablets.<br/>-Montagem de Computadores.<br/>-Visita Técnica.<br/>-Suporte ao usuário.<br/>-Configuração e manutenção em redes cabeadas e sem fio.<br/>"
+      "description": "- Manutenção em Computadores, Notebooks, Smartphones e Tablets.<br/>- Montagem de Computadores.<br/>- Visita Técnica.<br/>- Suporte ao usuário.<br/>- Configuração e manutenção em redes cabeadas e sem fio.<br/>"
     }
   ],
   "education": [

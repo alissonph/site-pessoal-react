@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Section, SectionHeader, SectionTitle, SectionContent, SectionContentText, Avatar, SectionName, SectionLink, LinkButton, SectionInfo, InfoItem, ExperienceInfo, SectionExperience, SectionExperienceInfo, EducationInfo, SectionTechnologies, Technology} from './styles';
+import { Switch } from '../Switch';
 import perfil from '../../assets/images/perfil.jpg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import github from '../../assets/icons/github.svg';
 import whatsapp from '../../assets/icons/whatsapp.svg';
 import data from '../../data/data.json';
 
-export default function Page() {
+export default function Page({ toggleTheme }) {
+
   return (
     <Container>
       <Section height="100vh">
@@ -14,6 +16,10 @@ export default function Page() {
           <Avatar src={perfil} />
         </SectionHeader>
         <SectionContent header>
+          <Switch id="switch" className="switch">
+            <input type="checkbox" id="slider" onChange={toggleTheme} />
+            <span className="slider round"></span>
+          </Switch>
           <div>
             <SectionName>
               <p className="lastName">{data.lastName}</p>
@@ -125,7 +131,7 @@ export default function Page() {
           <SectionContentText>
             <SectionTechnologies>
               {data.technologies.map((item) =>
-                  <Technology>
+                  <Technology key={item}>
                     <div className="badge">
                     </div>
                     <p>{item}</p>

@@ -13,7 +13,7 @@ export const Section = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: ${props => props.height == '100vh' ? '100%' : props.height};
+    height: ${props => props.height === '100vh' ? '100%' : props.height};
   }
 `;
 
