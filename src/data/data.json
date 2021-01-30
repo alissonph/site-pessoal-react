@@ -2,6 +2,9 @@
   "name": "ALISSON",
   "lastName": "HAUSMANN",
   "function": "Desenvolvedor de Software Pleno",
+  "linkedinLink": "https://www.linkedin.com/in/alissonph",
+  "githubLink": "https://github.com/alissonph",
+  "whatsappLink": "https://api.whatsapp.com/send?phone=5519991170250&text=Ol%C3%A1%20Alisson",
   "info": [
     {
       "title": "Localização",
@@ -24,7 +27,7 @@
       "link": "https://www.linkedin.com/in/alissonph"
     }
   ],
-  "intro": "Desenvolvedor de softwares. Atualmente estudando React e React Native utilizando algumas bibliotecas como Redux,Redux Thunk etc.<br/><br/>Experiência em grandes projetos,inclusive para a Samsung,onde participei por mais de 1 ano e meio,sendo 30 dias de maneira presencial em Manaus-AM.<br/><br/>Brasileiro com dupla cidadania alemã<br/>",
+  "intro": "Desenvolvedor de softwares. Atualmente estudando React e React Native utilizando algumas bibliotecas como Redux, Redux Thunk etc.<br/><br/>Experiência em grandes projetos, inclusive para a Samsung, onde participei por mais de 1 ano e meio,sendo 30 dias de maneira presencial em Manaus-AM.<br/><br/>Brasileiro com dupla cidadania alemã<br/>",
   "experience":[
     {
       "year": "12/2017 - Atual",
@@ -60,5 +63,22 @@
       "courseName": "Ensino Médio",
       "city": "Limeira - SP"
     }
+  ],
+  "technologies":[
+    "Javascript",
+    "jQuery",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "ADVPL",
+    "React",
+    "React Native",
+    "Angular",
+    "MySQL",
+    "SQL Server",
+    "APIs Rest e SOAP",
+    "NodeJS",
+    "MongoDB",
+    "Scrum"
   ]
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Section, SectionHeader, SectionTitle, SectionContent, SectionContentText, Avatar, SectionName, SectionLink, LinkButton, SectionInfo, InfoItem, ExperienceInfo, SectionExperience, SectionExperienceInfo, EducationInfo} from './styles';
+import { Container, Section, SectionHeader, SectionTitle, SectionContent, SectionContentText, Avatar, SectionName, SectionLink, LinkButton, SectionInfo, InfoItem, ExperienceInfo, SectionExperience, SectionExperienceInfo, EducationInfo, SectionTechnologies, Technology} from './styles';
 import perfil from '../../assets/images/perfil.jpg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import github from '../../assets/icons/github.svg';
@@ -21,13 +21,13 @@ export default function Page() {
               <p className="function">{data.function}</p>
             </SectionName>
             <SectionLink>
-              <LinkButton href="https://www.linkedin.com/in/alissonph" target="_blank" rel="noopener noreferrer">
+              <LinkButton href={data.linkedinLink} target="_blank" rel="noopener noreferrer">
                 <img src={linkedin} alt="Linkedin"/>
               </LinkButton>
-              <LinkButton href="https://github.com/alissonph" target="_blank" rel="noopener noreferrer">
+              <LinkButton href={data.githubLink} target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="Github"/>
               </LinkButton>
-              <LinkButton href="https://api.whatsapp.com/send?phone=5519991170250&text=Ol%C3%A1%20Alisson" target="_blank" rel="noopener noreferrer">
+              <LinkButton href={data.whatsappLink} target="_blank" rel="noopener noreferrer">
                 <img src={whatsapp} alt="Whatsapp"/>
               </LinkButton>
             </SectionLink>
@@ -111,6 +111,27 @@ export default function Page() {
                 </SectionExperienceInfo>
               </SectionExperience>
             )}
+          </SectionContentText>
+        </SectionContent>
+      </Section>
+      <Section height="auto">
+        <SectionHeader>
+          <SectionTitle>
+            <p className="title">Tecnologias</p>
+            <p className="subTitle">Linguagens e Tecnologias</p>
+          </SectionTitle>
+        </SectionHeader>
+        <SectionContent>
+          <SectionContentText>
+            <SectionTechnologies>
+              {data.technologies.map((item) =>
+                  <Technology>
+                    <div className="badge">
+                    </div>
+                    <p>{item}</p>
+                  </Technology>
+              )}
+            </SectionTechnologies>
           </SectionContentText>
         </SectionContent>
       </Section>

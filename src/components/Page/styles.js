@@ -181,6 +181,7 @@ export const LinkButton = styled.a`
 export const SectionInfo = styled.div`
   margin-top: 50px;
   border-top: 1px solid ${props => props.theme.colors.primary};
+  width: 100%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -191,9 +192,6 @@ export const SectionInfo = styled.div`
 
   @media screen and (max-width: 428px) {
     grid-template-columns: repeat(1, 1fr);
-    position: relative;
-    bottom: 0px;
-    flex-direction: column;
     margin-top: 10px;
   }
 `;
@@ -210,6 +208,10 @@ export const InfoItem = styled.div`
   .description{
     margin-top: 7px;
     font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 10px;
   }
 `;
 
@@ -264,5 +266,29 @@ export const EducationInfo = styled.div`
 
   .city{
     color: ${props => props.theme.colors.tertiary};
+  }
+`;
+
+export const SectionTechnologies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 428px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+export const Technology = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
   }
 `;
