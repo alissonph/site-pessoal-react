@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *, input, button{
-    font-family: 'Roboto', sans-serif;
+    font-family: ${props => props.theme.fonts.fontFamily};
   }
 
   html {
@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    color: #a4a5a6;
+    color: ${props => props.theme.colors.primary};
   }
 
   a{
@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a:hover{
-    color: #e0a80d;
+    color: ${props => props.theme.colors.secondary};
   }
 
   @media screen and (max-width: 425px){

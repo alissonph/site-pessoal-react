@@ -8,10 +8,12 @@ export const Section = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  height: ${props => props.height};
+  background-color:green;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    height: ${props => props.height == '100vh' ? '100%' : props.height};
   }
 `;
 
@@ -21,13 +23,38 @@ export const SectionHeader = styled.div`
   justify-content: center;
   align-items: flex-end;
   width: 40%;
-  background-color: #2b2c2c;
+  background-color: ${props => props.odd ? props.theme.colors.backgroundSecondary : props.theme.colors.backgroundPrimary};
   padding-right: 50px;
 
   @media screen and (max-width: 768px) {
+    background-color: ${props => props.theme.colors.backgroundPrimary};
     padding: 10px 0;
     align-items: center;
     width: 100%;
+  }
+`;
+
+export const SectionTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 40px;
+  text-align: right;
+
+  .title{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .subTitle{
+    margin-top: 7px;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 20px;
+    text-align: left;
+    align-self: flex-start;
   }
 `;
 
@@ -37,14 +64,61 @@ export const SectionContent = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 60%;
-  background-color: #343636;
-  padding-left: 50px;
+  background-color: ${props => props.odd ? props.theme.colors.backgroundPrimary : props.theme.colors.backgroundSecondary};
+  padding: 0 40px 0 50px;
 
   @media screen and (max-width: 768px) {
+    background-color: ${props => props.theme.colors.backgroundSecondary};
     padding: 10px 0;
-    align-items: center;
+    align-items: ${props => props.header ? 'center' : 'flex-start'};
     width: 100%;
   }
+`;
+
+export const SectionContentText = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 40px 0;
+
+  .text{
+    font-size: 1.6rem;
+  }
+
+  .badge{
+    min-width: 15px;
+    min-height: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: ${props => props.theme.colors.secondary};
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 20px;
+  }
+`;
+
+export const SectionExperience = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  :not(:first-child){
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 1180px) {
+    flex-direction: column;
+    .text{
+      margin-top: 10px;
+      font-size: 1.4rem;
+    }
+  }
+`;
+
+export const SectionExperienceInfo = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 export const Avatar = styled.img`
@@ -64,7 +138,7 @@ export const SectionName = styled.div`
   .name{
     font-size: 8rem;
     font-weight: bold;
-    color: #e0a80d;
+    color: ${props => props.theme.colors.secondary};
   }
   .function{
     padding-top: 10px;
@@ -87,7 +161,7 @@ export const LinkButton = styled.a`
   height: 35px;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #2b2c2c;
+  background-color: ${props => props.theme.colors.backgroundPrimary};
 
   img{
     width: 25px;
@@ -106,7 +180,7 @@ export const LinkButton = styled.a`
 
 export const SectionInfo = styled.div`
   margin-top: 50px;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid ${props => props.theme.colors.primary};
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -136,5 +210,59 @@ export const InfoItem = styled.div`
   .description{
     margin-top: 7px;
     font-size: 1.2rem;
+  }
+`;
+
+export const ExperienceInfo = styled.div`
+  margin-left: 10px;
+  min-width: 250px;
+  width: 250px;
+
+  p:not(:first-child){
+    margin-top: 10px;
+  }
+
+  .yearInfo{
+    font-size: 1.2rem;
+    color: ${props => props.theme.colors.tertiary};
+  }
+
+  .companyName{
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .functionName{
+    font-size: 1.2rem;
+  }
+
+  .city{
+    color: ${props => props.theme.colors.tertiary};
+  }
+`;
+
+export const EducationInfo = styled.div`
+  margin-left: 10px;
+
+  p:not(:first-child){
+    margin-top: 10px;
+  }
+
+  .yearInfo{
+    font-size: 1.2rem;
+    color: ${props => props.theme.colors.tertiary};
+  }
+
+  .companyName{
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .courseName{
+    font-size: 1.2rem;
+  }
+
+  .city{
+    color: ${props => props.theme.colors.tertiary};
   }
 `;
