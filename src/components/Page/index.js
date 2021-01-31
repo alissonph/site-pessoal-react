@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Section, SectionHeader, SectionTitle, SectionContent, SectionContentText, Avatar, SectionName, SectionLink, LinkButton, SectionInfo, InfoItem, ExperienceInfo, SectionExperience, SectionExperienceInfo, EducationInfo, SectionTechnologies, Technology} from './styles';
+import { Container, Section, SectionHeader, SectionTitle, SectionContent, SectionContentText, Avatar, SectionName, SectionLink, LinkButton, SectionInfo, InfoItem, ExperienceInfo, SectionExperience, SectionExperienceInfo, EducationInfo, SectionTechnologies, Technology, Footer} from './styles';
 import { Switch } from '../Switch';
-import perfil from '../../assets/images/perfil.jpg';
+import perfil from '../../assets/images/perfil.jpeg';
 import linkedin from '../../assets/icons/linkedin.svg';
 import github from '../../assets/icons/github.svg';
 import whatsapp from '../../assets/icons/whatsapp.svg';
@@ -141,6 +141,11 @@ export default function Page({ toggleTheme }) {
           </SectionContentText>
         </SectionContent>
       </Section>
+      <Footer>
+        <p>
+          2021 | Feito em React | Desenvolvido por: Alisson Hausmann
+        </p>
+      </Footer>
     </Container>
   )
 }

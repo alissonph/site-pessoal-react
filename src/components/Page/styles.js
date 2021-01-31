@@ -292,3 +292,16 @@ export const Technology = styled.div`
     font-size: 1.8rem;
   }
 `;
+
+export const Footer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: ${props => props.theme.colors.backgroundPrimary};
+  border-top: 1px solid ${props => props.theme.colors.primary};
+
+  p{
+    font-size: 1.2rem;
+  }
+`;
