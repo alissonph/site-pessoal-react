@@ -19,6 +19,7 @@ O projeto é um site (web) com o intuito de apresentar um pouco mais sobre você
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 - [ReactJS](https://reactjs.org)
+- [Styled Components] (https://styled-components.com)
 
 ---
 
