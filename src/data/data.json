@@ -30,7 +30,13 @@
   "intro": "Desenvolvedor de softwares. Atualmente estudando React e React Native utilizando algumas bibliotecas como Redux, Redux Thunk etc.<br/><br/>Experiência em grandes projetos, inclusive para a Samsung, onde participei por mais de 1 ano e meio,sendo 30 dias de maneira presencial em Manaus-AM.<br/><br/>Brasileiro com dupla cidadania alemã<br/>",
   "experience":[
     {
-      "year": "12/2017 - Atual",
+      "year": "02/2021 - Atual",
+      "companyName": "Icaro Tech",
+      "functionName": "Desenvolvedor de Software Pleno",
+      "city": "Campinas - SP",
+      "description": ""
+    },{
+      "year": "12/2017 - 02/2021",
       "companyName": "TOTVS Interior Paulista",
       "functionName": "Analista Desenvolvedor Pleno",
       "city": "Campinas - SP",
